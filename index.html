@@ -13,16 +13,25 @@
         <img src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="drop-down-menus">
+            <li class="New">Новинки</li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="catalog.html">Щербеты</a></li>
+            <li><a href="catalog.html">Фруктовый лед</a></li>
+            <li><a href="catalog.html">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="shipping.html">Доставка и оплата</a></li>
         <li><a href="info.html">О Компании</a></li>
       </ul>
     </nav>
     <nav class="user-navigation">
       <ul class="navigation">
-        <li class="searching">Пойск</li>
-        <li class="login-link">Вход</li>
-        <li class="basket">Пусто</li>
+        <li class="searching"><button class="button-searching">Пойск</button></li>
+        <li><a class="login-link" href="login.html">Вход</a>
+        </li>
+        <li class="basket"><button class="button-basket">Пусто</button></li>
       </ul>
     </nav>
     <section class="contacts">
@@ -79,7 +88,7 @@
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
-      <div>
+      <div class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy-small.png" alt="Логотип HTML Academy" width="108" height="39">
         </a>
@@ -88,6 +97,67 @@
 
     </div>
   </footer>
+
+  <section class="modal-login">
+    <h2 class="visually-hidden">Вход в личный кабинет</h2>
+    <form class="login-form" action="URL" method="POST">
+      <label class="visually-hidden" for="user-mail">Электронная почта</label>
+      <input class="login-mail" id="user-mail" type="text" name="mail" placeholder="Электроная почта">
+      <label class="visually-hidden" for="user-password">Пароль</label>
+      <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+      <button class="button-entrance" type="submit">Войти</button>
+      <p><a href="">Забыли пароль?</a></p>
+      <p><a href="">Новая регистрация</a></p>
+    </form>
+  </section>
+
+  <section class="searching">
+    <h2 class="visually-hidden">Пойск</h2>
+    <form class="searching-form" action="URL" method="POST">
+      <label for="user-searching">Пойск</label>
+      <input class="modal-searching" type="text" name="Пойск" id="user-searching" placeholder="Что ищем?">
+    </form>
+  </section>
+
+  <section class="feedback-window">
+    <h2>Мы обезательно вам ответим!</h2>
+    <form action="URL" method="POST">
+      <label class="visually-hidden" for="enter-name">Ваше имя</label>
+      <input type="text" name="name" id="enter-name" placeholder="Как вас зовут?">
+      <label class="visually-hidden" for="enter-mail">Ваша почта</label>
+      <input type="text" name="mail" id="enter-mail" placeholder="Ваша почта для ответа?">
+      <label class="visually-hidden" for="enter-text">Ваше сообшение</label>
+      <input type="text" name="text" id="enter-text" placeholder="Напишите что-нибудь..">
+      <button class="button-close" type="button">Закрыть</button>
+      <button class="button-send" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section class="window-basket">
+    <h2 class="visually-hidden">Ваши товары</h2>
+    <div class="selected-item">
+      <button class="button-delete" type="button">Удалить</button>
+      <img src="img/item-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33">
+      <p class="name-item">Пломбир с апельсиновым джемом
+        <span class="quantity-item">5 кг х 200 руб.</span>
+        <span class="price-item">300 руб.</span>
+      </p>
+    </div>
+
+    <div class="selected-item">
+      <button class="button-delete" type="button">Удалить</button>
+      <img src="img/item-3.png" alt="Клубничный пломбир с присыпкой 
+        из белого шоколада" width="33" height="33">
+      <p class="name-item">Пломбир с апельсиновым джемом
+        <span class="quantity-item">5 кг х 300 руб.</span>
+        <span class="price-item">450 руб.</span>
+      </p>
+    </div>
+    <p class="total-price">Итого: 750р</p>
+    <p class="button-order">
+      <a href="basket.html">Оформить заказ</a>
+    </p>
+  </section>
 </body>
 
 </html>
