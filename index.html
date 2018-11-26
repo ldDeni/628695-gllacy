@@ -13,31 +13,79 @@
         <img src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a>
+        <li>
+          <a href="catalog.html">Каталог</a>
           <ul class="drop-down-menus">
-            <li class="New">Новинки</li>
+            <li class="new"><a href="#">Новинки</a></li>
             <li><a href="catalog.html">Сливочное</a></li>
-            <li><a href="catalog.html">Щербеты</a></li>
-            <li><a href="catalog.html">Фруктовый лед</a></li>
-            <li><a href="catalog.html">Мелорин</a></li>
+            <li><a href="# ">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="shipping.html">Доставка и оплата</a></li>
-        <li><a href="info.html">О Компании</a></li>
+        <li>
+          <a href="shipping.html">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="info.html">О Компании</a>
+        </li>
       </ul>
     </nav>
     <nav class="user-navigation">
       <ul class="navigation">
-        <li class="searching"><button class="button-searching">Пойск</button></li>
-        <li><a class="login-link" href="login.html">Вход</a>
+
+        <li class="searching">
+          <a class="button-searching">Поиск</a>
+          <section class="searching">
+
+            <h2 class="visually-hidden">Поиск</h2>
+
+            <form class="searching-form" action="URL" method="POST">
+
+              <label for="user-searching">Поиск</label>
+              <input class="modal-searching" type="text" name="Поиск" id="user-searching" placeholder="Что ищем?">
+
+            </form>
+
+          </section>
         </li>
-        <li class="basket"><button class="button-basket">Пусто</button></li>
+
+        <li>
+          <a class="login-link" href="login.html">Вход</a>
+
+          <section class="modal-login">
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form class="login-form" action="URL" method="POST">
+
+              <label class="visually-hidden" for="user-mail">Электронная почта</label>
+              <input class="login-mail" id="user-mail" type="email" name="mail" placeholder="Электроная почта">
+
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+
+              <button class="button-entrance" type="submit">Войти</button>
+
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+
+            </form>
+          </section>
+        </li>
+
+        <li class="basket">
+          <a class="button-basket">Пусто</a>
+        </li>
+        
       </ul>
     </nav>
+
     <section class="contacts">
       <p>С 10 до 20, ежедневно</p>
-      <p><a href="tel:812 450-25-25">812 450-25-25</a></p>
+      <p>
+        <a href="tel:812 450-25-25">812 450-25-25</a>
+      </p>
     </section>
+
   </header>
   <main class="container">
 
@@ -64,10 +112,14 @@
       <p><a href="#">10 способов сервировки<br>фруктовых щербетов к<br>столу</a></p>
     </article>
     <section class="newsletter">
+
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <span>Электронная почта</span>
-      <span class="button-send">Отправить</span>
+      <label class="visually-hidden" for="mailing">Электронная почта</label>
+      <input type="email" placeholder="Электронная почта" id="mailing">
+
+      <button class="button-send" type="submit">Отправить</button>
+
     </section>
 
     <!-- Сдесь будет карта. -->
@@ -98,66 +150,23 @@
     </div>
   </footer>
 
-  <section class="modal-login">
-    <h2 class="visually-hidden">Вход в личный кабинет</h2>
-    <form class="login-form" action="URL" method="POST">
-      <label class="visually-hidden" for="user-mail">Электронная почта</label>
-      <input class="login-mail" id="user-mail" type="text" name="mail" placeholder="Электроная почта">
-      <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
-      <button class="button-entrance" type="submit">Войти</button>
-      <p><a href="">Забыли пароль?</a></p>
-      <p><a href="">Новая регистрация</a></p>
-    </form>
-  </section>
-
-  <section class="searching">
-    <h2 class="visually-hidden">Пойск</h2>
-    <form class="searching-form" action="URL" method="POST">
-      <label for="user-searching">Пойск</label>
-      <input class="modal-searching" type="text" name="Пойск" id="user-searching" placeholder="Что ищем?">
-    </form>
-  </section>
-
   <section class="feedback-window">
     <h2>Мы обезательно вам ответим!</h2>
     <form action="URL" method="POST">
       <label class="visually-hidden" for="enter-name">Ваше имя</label>
       <input type="text" name="name" id="enter-name" placeholder="Как вас зовут?">
+
       <label class="visually-hidden" for="enter-mail">Ваша почта</label>
-      <input type="text" name="mail" id="enter-mail" placeholder="Ваша почта для ответа?">
+      <input type="email" name="mail" id="enter-mail" placeholder="Ваша почта для ответа?">
+
       <label class="visually-hidden" for="enter-text">Ваше сообшение</label>
-      <input type="text" name="text" id="enter-text" placeholder="Напишите что-нибудь..">
+      <textarea id="enter-text" rows="5" cols="30" placeholder="Напишите что-нибудь.."></textarea>
+
       <button class="button-close" type="button">Закрыть</button>
       <button class="button-send" type="submit">Отправить</button>
     </form>
   </section>
 
-  <section class="window-basket">
-    <h2 class="visually-hidden">Ваши товары</h2>
-    <div class="selected-item">
-      <button class="button-delete" type="button">Удалить</button>
-      <img src="img/item-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="33" height="33">
-      <p class="name-item">Пломбир с апельсиновым джемом
-        <span class="quantity-item">5 кг х 200 руб.</span>
-        <span class="price-item">300 руб.</span>
-      </p>
-    </div>
-
-    <div class="selected-item">
-      <button class="button-delete" type="button">Удалить</button>
-      <img src="img/item-3.png" alt="Клубничный пломбир с присыпкой 
-        из белого шоколада" width="33" height="33">
-      <p class="name-item">Пломбир с апельсиновым джемом
-        <span class="quantity-item">5 кг х 300 руб.</span>
-        <span class="price-item">450 руб.</span>
-      </p>
-    </div>
-    <p class="total-price">Итого: 750р</p>
-    <p class="button-order">
-      <a href="basket.html">Оформить заказ</a>
-    </p>
-  </section>
 </body>
 
 </html>
