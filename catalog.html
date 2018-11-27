@@ -44,10 +44,41 @@
       <ul class="navigation">
         <li class="searching">
           <a class="button-searching">Поиск</a>
+
+          <section class="searching">
+
+            <h2 class="visually-hidden">Поиск</h2>
+
+            <form class="searching-form" action="echo.htmlacademy.ru" method="POST">
+
+              <label for="user-searching">Поиск</label>
+              <input class="modal-searching" type="text" name="Поиск" id="user-searching" placeholder="Что ищем?">
+
+            </form>
+
+          </section>
         </li>
 
         <li>
           <a class="login-link" href="login.html">Вход</a>
+
+          <section class="modal-login">
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
+            <form class="login-form" action="echo.htmlacademy.ru" method="POST">
+
+              <label class="visually-hidden" for="user-mail">Электронная почта</label>
+              <input class="login-mail" id="user-mail" type="email" name="mail" placeholder="Электроная почта">
+
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+
+              <button class="button-entrance" type="submit">Войти</button>
+
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+
+            </form>
+          </section>
         </li>
 
         <li class="basket-goods">

@@ -40,7 +40,7 @@
 
             <h2 class="visually-hidden">Поиск</h2>
 
-            <form class="searching-form" action="URL" method="POST">
+            <form class="searching-form" action="echo.htmlacademy.ru" method="POST">
 
               <label for="user-searching">Поиск</label>
               <input class="modal-searching" type="text" name="Поиск" id="user-searching" placeholder="Что ищем?">
@@ -55,7 +55,7 @@
 
           <section class="modal-login">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
-            <form class="login-form" action="URL" method="POST">
+            <form class="login-form" action="echo.htmlacademy.ru" method="POST">
 
               <label class="visually-hidden" for="user-mail">Электронная почта</label>
               <input class="login-mail" id="user-mail" type="email" name="mail" placeholder="Электроная почта">
@@ -75,7 +75,7 @@
         <li class="basket">
           <a class="button-basket">Пусто</a>
         </li>
-        
+
       </ul>
     </nav>
 
@@ -111,15 +111,18 @@
       <p>Новое в нашем блоге</p>
       <p><a href="#">10 способов сервировки<br>фруктовых щербетов к<br>столу</a></p>
     </article>
+
     <section class="newsletter">
+      <form action="echo.htmlacademy.ru">
 
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-      <label class="visually-hidden" for="mailing">Электронная почта</label>
-      <input type="email" placeholder="Электронная почта" id="mailing">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+        <label class="visually-hidden" for="mailing">Электронная почта</label>
+        <input type="email" placeholder="Электронная почта" id="mailing">
 
-      <button class="button-send" type="submit">Отправить</button>
+        <button class="button-send" type="submit">Отправить</button>
 
+      </form>
     </section>
 
     <!-- Сдесь будет карта. -->
@@ -152,7 +155,7 @@
 
   <section class="feedback-window">
     <h2>Мы обезательно вам ответим!</h2>
-    <form action="URL" method="POST">
+    <form action="echo.htmlacademy.ru" method="POST">
       <label class="visually-hidden" for="enter-name">Ваше имя</label>
       <input type="text" name="name" id="enter-name" placeholder="Как вас зовут?">
 
