@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
@@ -35,14 +38,12 @@
       <ul class="navigation">
 
         <li class="searching">
-          <a class="button-searching">Поиск</a>
-          <section class="searching">
+          <a  href="#" class="button-searching">Поиск</a>
 
-            <h2 class="visually-hidden">Поиск</h2>
+          <section class="searching visually-hidden">
 
             <form class="searching-form" action="echo.htmlacademy.ru" method="POST">
 
-              <label for="user-searching">Поиск</label>
               <input class="modal-searching" type="text" name="Поиск" id="user-searching" placeholder="Что ищем?">
 
             </form>
@@ -53,7 +54,7 @@
         <li>
           <a class="login-link" href="login.html">Вход</a>
 
-          <section class="modal-login">
+          <section class="modal-login visually-hidden">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <form class="login-form" action="echo.htmlacademy.ru" method="POST">
 
@@ -73,16 +74,16 @@
         </li>
 
         <li class="basket">
-          <a class="button-basket">Пусто</a>
+          <a class="button-basket" href="#">Пусто</a>
         </li>
 
       </ul>
     </nav>
 
     <section class="contacts">
-      <p>С 10 до 20, ежедневно</p>
-      <p>
-        <a href="tel:812 450-25-25">812 450-25-25</a>
+      <p class="working-hours">С 10 до 20, ежедневно</p>
+      <p class="phone">
+        <a href="tel:8 812 450-25-25">8 812 450-25-25</a>
       </p>
     </section>
 
@@ -153,7 +154,7 @@
     </div>
   </footer>
 
-  <section class="feedback-window">
+  <section class="feedback-window visually-hidden">
     <h2>Мы обезательно вам ответим!</h2>
     <form action="echo.htmlacademy.ru" method="POST">
       <label class="visually-hidden" for="enter-name">Ваше имя</label>

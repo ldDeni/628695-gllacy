@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff;
+
+background-color: #849d8f;
+}
+a {
+    color: #ffffff;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.main-navigation {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #ffffff;
+
+}
+
+.user-navigation {
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.site-navigation,
+.navigation {
+    list-style-type: none;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.navigation a:hover,
+.navigation a:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+.phone {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.phone a{
+    text-decoration: none;
+}
+.working-hours {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}

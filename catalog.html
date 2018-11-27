@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css\style.css">
   <title>Каталог Глейси</title>
 </head>
 
@@ -47,11 +50,8 @@
 
           <section class="searching">
 
-            <h2 class="visually-hidden">Поиск</h2>
-
             <form class="searching-form" action="echo.htmlacademy.ru" method="POST">
 
-              <label for="user-searching">Поиск</label>
               <input class="modal-searching" type="text" name="Поиск" id="user-searching" placeholder="Что ищем?">
 
             </form>
@@ -84,7 +84,7 @@
         <li class="basket-goods">
           <a class="button-basket-goods">2 товара</a>
 
-          <section class="window-basket">
+          <section class="window-basket visually-hidden">
             <h2 class="visually-hidden">Ваши товары</h2>
             <div class="selected-item">
               <button class="button-delete" type="button">Удалить</button>
