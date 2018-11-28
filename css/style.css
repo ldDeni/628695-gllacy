@@ -122,6 +122,11 @@ article>p {
   line-height: 30px;
 }
 
+.link-article a:hover,
+.link-article a:focus {
+  color: #ffbc9e;
+}
+
 .newsletter {
   color: #848483;
   font-size: 16px;
