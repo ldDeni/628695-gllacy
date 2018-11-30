@@ -30,7 +30,6 @@ a {
 .feedback-window,
 .sub-menu,
 .window-basket {
-
   display: none;
 }
 
@@ -39,15 +38,13 @@ a {
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
-
 }
 
 .user-navigation {
-
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 16px;  
 }
 
 .site-navigation,
@@ -102,14 +99,14 @@ a {
   line-height: 22px;
 }
 
-article {
+.article {
   color: #323232;
 
   background-image: url(../img/strawberry-fons.png);
   background-repeat: no-repeat;
 }
 
-article>p {
+.article .title-article {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -192,7 +189,7 @@ article>p {
   color: #ffbc9e;
 }
 
-h1 {
+.title {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
