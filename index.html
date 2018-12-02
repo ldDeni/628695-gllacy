@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-heder">
+  <header class="main-heder box">
     <nav class="main-navigation">
       <a class="main-heder-logo">
         <img src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
@@ -88,7 +88,7 @@
     </section>
 
   </header>
-  <main class="container">
+  <main class="container box">
 
     <!-- Сдесь будет слайдер и хиты -->
 
@@ -97,39 +97,42 @@
       <p class="advantage advantage-icon1">Все наше мороженое изготавливается на собственном производстве, с
         использованием
         современного оборудования и проверенных временем технологий.</p>
-      <p class="advantage advantage-icon2">Для приготовления мороженого используются настоящие сливки и молоко
-        высочайшего качества.
-        Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-      <p class="advantage advantage-icon3">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+      <p class="advantage advantage-icon2">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
         компаний, с
         которыми нас связывает долговременное сотрудничество.</p>
+      <p class="advantage advantage-icon3">Для приготовления мороженого используются настоящие сливки и молоко
+        высочайшего качества.
+        Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
       <p class="advantage advantage-icon4">Доставка нашего мороженого до заказчиков осуществляется в специальном
         термопаке, который
         не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
       </p>
     </section>
-    <article class="article">
-      <p class="title-article">Новое в нашем блоге</p>
-      <p class="link-article"><a href="#">10 способов сервировки<br>фруктовых щербетов к<br>столу</a></p>
-    </article>
 
-    <section class="newsletter">
-      <form action="echo.htmlacademy.ru">
+    <div class="wrap">
+      <article class="article">
+        <p class="title-article">Новое в нашем блоге</p>
+        <p class="link-article"><a href="#">10 способов сервировки<br>фруктовых щербетов к<br>столу</a></p>
+      </article>
 
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <label class="visually-hidden" for="mailing">Электронная почта</label>
-        <input type="email" placeholder="Электронная почта" id="mailing">
+      <section class="newsletter">
+        <form action="echo.htmlacademy.ru">
 
-        <button class="button-send" type="submit">Отправить</button>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+          <label class="visually-hidden" for="mailing">Электронная почта</label>
+          <input type="email" placeholder="Электронная почта" id="mailing">
 
-      </form>
-    </section>
+          <button class="button-send" type="submit">Отправить</button>
+
+        </form>
+      </section>
+    </div>
 
     <!-- Сдесь будет карта. -->
 
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer box">
     <div class="social-footer">
       <ul>
         <li><a class="social-botton social-botton-tw" href="#">Твитер</a></li>
@@ -139,10 +142,14 @@
       </ul>
 
       <ul class="footer-navigation">
-        <li class="icon-heart"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <div class="navigation-group2">
+          <li class="icon-heart"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+        </div>
+        <div class="navigation-group1">
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </div>
       </ul>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">

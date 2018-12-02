@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-heder">
+  <header class="main-heder box">
     <nav class="main-navigation">
       <a class="main-heder-logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
@@ -121,20 +121,22 @@
         <a href="tel:8 812 450-25-25">8 812 450-25-25</a>
       </p>
     </section>
+    <div class="box-crumbs">
+      <ul class="crumbs">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+
+        <li>Сливочное</li>
+      </ul>
+    </div>
   </header>
 
-  <main class="container">
-    <ul class="crumbs">
-      <li>
-        <a href="index.html">Главная</a>
-      </li>
-
-      <li>
-        <a href="catalog.html">Каталог</a>
-      </li>
-
-      <li>Сливочное</li>
-    </ul>
+  <main class="container box">
     <h1 class="title">Сливочное мороженое</h1>
 
     <!-- Сдесь будет фильтр -->
@@ -290,7 +292,7 @@
     <!-- Сдесь будет переключатель страниц -->
 
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer box">
     <div class="social-footer">
       <ul>
         <li><a class="social-botton social-botton-tw" href="#">Твитер</a></li>
@@ -300,10 +302,14 @@
       </ul>
 
       <ul class="footer-navigation">
-        <li  class="icon-heart"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <div class="navigation-group2">
+          <li class="icon-heart"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+        </div>
+        <div class="navigation-group1">
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </div>
       </ul>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
