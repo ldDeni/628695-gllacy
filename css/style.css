@@ -33,7 +33,7 @@ a {
   display: none;
 }
 
-.box {
+.container {
   width: 1146px;
   margin: 0 auto;
   padding: 0;
@@ -147,6 +147,7 @@ a {
 
 .info-company {
   margin-bottom: 40px;
+  padding-left: 20px;
   color: #323232;
 
   background-image: url(../img/slice_1.png);
@@ -157,10 +158,7 @@ a {
   justify-content: space-between;
 }
 
-.info-company h1 {
-  width: 1013px;
-  padding-left: 20px;
-
+.info-company h2 {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
@@ -175,10 +173,9 @@ a {
   line-height: 22px;
 }
 
-.info-company .advantage-icon4,
-.info-company .advantage-icon2 {
-  padding-left: 0;
-  padding-right: 30px;
+.inner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .wrap {
@@ -190,15 +187,12 @@ a {
 .article {
   width: 560px;
   margin: 0;
+  padding-left: 10px;
 
   color: #323232;
 
   background-image: url(../img/strawberry-fons.png);
   background-repeat: no-repeat;
-}
-
-.article p {
-  padding-left: 10px;
 }
 
 .article .title-article {
@@ -221,7 +215,7 @@ a {
 
 .newsletter {
   width: 550px;
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
 
   color: #848483;
