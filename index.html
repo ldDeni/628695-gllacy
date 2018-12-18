@@ -116,15 +116,15 @@
       <div class="conteainer-action action-raspberry">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <p class="bnt-action">
-          <a href="#">Хочу варенье!</a>
+        <p class="wrapper-bnt-action">
+          <a class="bnt-action" href="#">Хочу варенье!</a>
         </p>
       </div>
       <div class="conteainer-action action-chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <p class="bnt-action">
-          <a href="#">Хочу шоколадки!</a>
+        <p class="wrapper-bnt-action">
+          <a class="bnt-action" href="#">Хочу шоколадки!</a>
         </p>
       </div>
     </section>
@@ -133,7 +133,7 @@
       <ul class="hit-list">
         <li class="catalog-item hit-item">
           <h3>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="name-item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
           <p class="catalog-item-img">
             <img src="img/item-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -146,7 +146,7 @@
 
         <li class="catalog-item hit-item">
           <h3>
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="name-item" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
           <p class="catalog-item-img">
             <img src="img/item-2.png" alt="Сливочно-кофейное с кусочками шоколадай" width="267" height="267">
@@ -159,7 +159,7 @@
 
         <li class="catalog-item hit-item">
           <h3>
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="name-item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
           <p class="catalog-item-img">
             <img src="img/item-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
@@ -172,7 +172,7 @@
 
         <li class="catalog-item hit-item">
           <h3>
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="name-item" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
           <p class="catalog-item-img">
             <img src="img/item-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
@@ -226,18 +226,23 @@
         </section>
       </div>
     </div>
-
-    <!-- Сдесь будет карта. -->
-    <section class="section-contacts">
-      <p>Адрес главного офиса
-        и офлайн-магазина:</p>
-      <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-      <p>Для заказов по телефону:</p>
-      <p>8 812 450-25-25
-        (с 10 до 20 ежедневно)</p>
-      <p class="bnt-contacts"><a href="#">Форма обратной связи</a></p>
-    </section>
   </main>
+
+  <div class="maps">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBFp58GTSA" width="1200" height="430" frameborder="1"
+      allowfullscreen="true"></iframe>
+
+    <section class="section-contacts">
+      <h3>Адрес главного офиса<br>
+        и офлайн-магазина:</h3>
+      <p class="address-phone">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
+      <p class="for-orders">Для заказов по телефону:</p>
+      <p class="address-phone">8 812 450-25-25</p>
+      <p class="hours">(с 10 до 20 ежедневно)</p>
+      <p class="wrapper-bnt-contacts"><a class="bnt-contacts" href="#">Форма обратной связи</a></p>
+    </section>
+  </div>
+
   <footer class="main-footer container">
     <div class="social-footer">
       <ul class="social">

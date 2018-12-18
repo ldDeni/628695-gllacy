@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 1200px;
+
 
   font-family: 'Roboto', Tahoma, Geneva, sans-serif;
   font-size: 16px;
@@ -100,7 +102,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   padding: 10px 13px;
   margin-right: 5px;
-  ;
+  box-sizing: border-box;
 }
 
 .navigation a {
@@ -475,6 +477,7 @@ input[type="radio"].visually-hidden {
   display: none;
   margin: 0;
   padding: 0;
+
   overflow: hidden;
   border-radius: 5px;
   box-sizing: border-box;
@@ -546,7 +549,6 @@ input[type="radio"].visually-hidden {
 
 .working-hours {
   width: 151px;
-  margin: 0;
 }
 
 .phone {
@@ -1017,11 +1019,6 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
 }
 
-.catalog a:hover,
-.catalog a:focus {
-  color: #ffbc9e;
-}
-
 .catalog-price {
   position: absolute;
   left: 0;
@@ -1142,11 +1139,6 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
 }
 
-.hit-list a:hover,
-.hit-list a:focus {
-  color: #ffbc9e;
-}
-
 .hit-list span {
   font-size: 30px;
   font-weight: 700;
@@ -1164,26 +1156,40 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: -60px;
   left: 40px;
-  z-index: 1;
-
+  z-index: 2;
+  
   padding: 13px 17px;
-  border-radius: 90px;
 
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  color: #f8f7f4;
+  color: #ffffff;
+
+  border-radius: 50px;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
 }
 
 .bnt-view:hover {
-  box-shadow: 0 2px 2px #ac1000;
-  transition-duration: 0.3s;
+  background-image: linear-gradient(to top, #e67060 0%, #f38567 100%);
+  box-shadow: 0 1px 2px #ac1000;
+  transition-duration: 0.2s;
 }
 
 .bnt-view:active {
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0 2px 2px #942718;
+}
+
+.name-item {
+  color: #f8f7f4;
+}
+
+.name-item:hover,
+.name-item:focus,
+.name-item:active {
+  color: #ffbc9e;
 }
 
 .catalog-item h3 {
@@ -1210,19 +1216,24 @@ input[type="radio"].visually-hidden {
   background-position: center;
 }
 
-.catalog-item:hover::before {
+.catalog-item:before {
   content: "";
   position: absolute;
   top: -6px;
   left: -13px;
+  display: none;
 
   z-index: 1;
   width: 293px;
   height: 405px;
 
-  background-color: rgba(246, 250, 247, 0.2);
+  background-color: rgba(246, 250, 247, 0.226);
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item:hover::before {
+  display: block;
 }
 
 .catalog-item:hover .bnt-view {
@@ -1258,27 +1269,40 @@ input[type="radio"].visually-hidden {
 .conteainer-action p {
   margin: 0px;
   padding-top: 20px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
 
-.conteainer-action .bnt-action {
-  padding: 13px 22px;
+.conteainer-action .wrapper-bnt-action {
   margin-top: 45px;
   margin-right: 21px;
   margin-bottom: 25px;
 
   align-self: flex-end;
-
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  border-radius: 90px;
 }
 
-.bnt-action a {
-  text-align: center;
+.bnt-action {
+  padding: 13px 22px;
+
+  color: #ffffff;
   text-decoration: none;
-  color: #f8f7f4;
+
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+}
+
+.bnt-action:hover {
+  background-image: linear-gradient(to top, #e67060 0%, #f38567 100%);
+  box-shadow: 0 1px 2px #ac1000;
+  transition-duration: 0.2s;
+}
+
+.bnt-action:active {
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+  box-shadow: inset 0 2px 2px #942718;
 }
 
 .action-raspberry {
@@ -1291,16 +1315,119 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.section-contacts {
-  width: 302px;
-  padding-left: 25px;
+.maps {
+  position: relative;
+  min-width: 1200px;
+  min-height: 430px;
 
-  color: #000000;
+  background-image: url(../img/maps.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+}
+
+.section-contacts {
+  position: absolute;
+  right: 27px;
+  top: 63px;
+
+  width: 255px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #323232;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  
   background-color: #fffffe;
   border-radius: 15px;
 }
 
+.section-contacts h3 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .section-contacts p {
   margin: 0;
-  padding-top: 20px;
+}
+
+.for-orders {
+  padding-top: 18px;
+}
+
+ .address-phone {
+  padding-top: 2px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.working-hours {
+  margin: 0;
+  padding-top: 10px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.wrapper-bnt-contacts {
+  margin: 0;
+  padding-top: 35px;
+}
+
+.bnt-contacts {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+}
+
+.bnt-contacts:hover {
+  background-image: linear-gradient(to top, #e67060 0%, #f38567 100%);
+  box-shadow: 0 1px 2px #ac1000;
+  transition-duration: 0.2s;
+}
+
+.bnt-contacts:active {
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+  box-shadow: inset 0 2px 2px #942718;
+}
+
+.maps::before {
+  content: "";
+  position: absolute;
+  left: 255px;
+  bottom: 155px;
+
+  z-index: 2;
+
+  width: 100px;
+  height: 140px;
+
+  
+  background-image: url(../img/branded-marker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px 140px;
+
 }
