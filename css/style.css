@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  padding: 10px 13px;
+  padding: 6px 13px;
   margin-right: 2px;
   box-sizing: border-box;
 }
@@ -331,7 +331,7 @@ input[type="radio"].visually-hidden {
   justify-content: baseline;
 }
 
-.name-item {
+.name-item-basket {
   display: flex;
   align-content: space-between;
   align-items: baseline;
@@ -996,7 +996,21 @@ input[type="radio"].visually-hidden {
 }
 
 .crumbs li {
+  position: relative;
   padding-right: 20px;
+}
+
+.element-crumbs::before {
+  content: "\BB";
+  text-align: center;
+  vertical-align: middle;
+
+  width: 8px;
+  height: 8px;
+
+  position: absolute;
+  top: 5px;
+  right: 6px;
 }
 
 .crumbs a {
@@ -1201,10 +1215,6 @@ input[type="radio"].visually-hidden {
 .bnt-view:active {
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0 2px 2px #942718;
-}
-
-.name-item {
-  color: #f8f7f4;
 }
 
 .name-item:hover,
