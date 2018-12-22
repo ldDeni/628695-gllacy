@@ -269,7 +269,7 @@ input[type="radio"].visually-hidden {
 .button-entrance:focus {
   opacity: 0.8;
   box-shadow: 0 2px 2px #ac1000;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .login-mail,
@@ -440,7 +440,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.8;
   color: #ffffff;
   box-shadow: 0 2px 2px #ac1000;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .button-active:active {
@@ -692,8 +692,8 @@ input[type="radio"].visually-hidden {
 .article {
   width: 540px;
   min-height: 220px;
-  margin: 0;
 
+  margin: 0;
   padding-left: 20px;
 
   color: #323232;
@@ -788,7 +788,7 @@ input[type="radio"].visually-hidden {
 .button-send:focus {
   opacity: 0.8;
   box-shadow: 0 2px 2px #ac1000;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .button-send:active {
@@ -1082,7 +1082,7 @@ input[type="radio"].visually-hidden {
   top: 334px;
   left: 338px;
 
-  display: block;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   padding-left: 24px;
@@ -1091,6 +1091,32 @@ input[type="radio"].visually-hidden {
 
   background-color: #f8f7f4;
   border-radius: 15px;
+}
+
+.feedback-open {
+  display: block;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.overlay-on {
+  display: block;
 }
 
 .feedback-form {
@@ -1543,6 +1569,7 @@ input[type="radio"].visually-hidden {
 .button-s:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  transition-duration: 0.2s;
 }
 
 .button-s:active {
@@ -1568,7 +1595,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 61px;
   left: 0;
-  z-index: 20;
+  z-index: 3;
 
   font-size: 0;
 }
