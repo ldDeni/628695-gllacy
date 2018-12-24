@@ -1,8 +1,9 @@
 var openFeedback = document.querySelector(".bnt-contacts"); // Кнопка обратно связи.
 var windowFeedback = document.querySelector(".feedback-window"); // Окно формы.
 var closeFeedback = windowFeedback.querySelector(".button-close"); // Кнопка закрытия.
-var name = windowFeedback.querySelector(".enter-name");
-var mail = windowFeedback.querySelector(".enter-mail");
+var name = windowFeedback.querySelector(".enter-name");       // Поле ввода имени
+var mail = windowFeedback.querySelector(".enter-mail");       // Поле эл.почты
+var feiled = windowFeedback.querySelector(".input-field");   // Поле ввода текста
 var overlay = document.querySelector(".overlay");
 
 openFeedback.addEventListener("click", function (evt) {
@@ -15,29 +16,24 @@ openFeedback.addEventListener("click", function (evt) {
 closeFeedback.addEventListener("click", function (evt) {
     evt.preventDefault();
     windowFeedback.classList.remove("feedback-open");   // закрывает форму обратной связи.
-    overlay.classList.remove("overlay-on");
+    windowFeedback.classList.remove("feedback-error"); // убират класс ошибки
+    overlay.classList.remove("overlay-on");            // убирает оверлай
 });
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (windowFeedback.classList.contains("feedback-open")) {
         windowFeedback.classList.remove("feedback-open");
+        windowFeedback.classList.remove("feedback-error");
         overlay.classList.remove("overlay-on");
       }
     }
   });
-
-if (!name.value || mail.value) {
-
-}
-
-form.addEventListener("submit", function (evt) {
-    if (!name.value || mail.value) {
+  windowFeedback.addEventListener("submit", function(evt) {
+    if (!name.value || mail.value || feiled.value) {
       evt.preventDefault();
-      windowFeedbac.classList.add("feedback-error");
+      windowFeedback.classList.add("feedback-error");
     } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-      }
+
     }
-  });
+  })

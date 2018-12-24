@@ -797,7 +797,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .social-botton {
@@ -1047,6 +1047,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-list {
   padding: 0;
+  margin-bottom: 42px;
+
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -1158,22 +1160,17 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes error {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  20% {
-    transform: translateY(20px);
-  }
-
-  40% {
-    transform: translateY(-10px);
-  }
-
-  60% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: translateY(10px);
   }
 
+  20%,
+  40%,
+  60%,
   80% {
     transform: translateY(-10px);
   }
@@ -1182,6 +1179,7 @@ input[type="radio"].visually-hidden {
     transform: translateY(0);
   }
 }
+
 
 .feedback-error {
   animation: error 0.6s;
@@ -1726,6 +1724,7 @@ label {
 
   padding-left: 16px;
   padding-right: 23px;
+  margin-bottom: 8px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1768,6 +1767,7 @@ label {
   padding-bottom: 10px;
   padding-left: 46px;
   padding-right: 17px;
+  margin-bottom: 8px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1923,20 +1923,71 @@ label {
 }
 
 .page-selector-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  position: relative;
+
   display: flex;
   list-style: none;
   justify-content: flex-end;
 }
+.page-selector-list::before {
+  content: "";
 
-.bnt-page-selector {
-  margin-right: 20px;
+  position: absolute;
+  top: 53px;
+
+  width: 1146px;
+  height: 1px;
+
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.bnt-page-selector{
+  display: block;
+}
+
+.page-active {
+  margin-right: 10px;
   padding: 4px 9px;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   color: #323232;
+  text-decoration: none;
 
   background-color: #ffffff;
   border-radius: 50px;
+}
+.bnt-page-selector {
+  margin-right: 5px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.bnt-page-next::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.bnt-page-back,
+.bnt-page-next {
+  font-size: 0;
 }
