@@ -1047,7 +1047,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-list {
   padding: 0;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   list-style-type: none;
   display: flex;
@@ -1925,6 +1925,8 @@ label {
 .page-selector-list {
   margin: 0;
   padding: 0;
+  
+  margin-right: 22px;
   margin-bottom: 30px;
 
   position: relative;
@@ -1951,8 +1953,7 @@ label {
 }
 
 .page-active {
-  margin-right: 10px;
-  padding: 4px 9px;
+  padding: 5px 10px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1964,7 +1965,8 @@ label {
   border-radius: 50px;
 }
 .bnt-page-selector {
-  margin-right: 5px;
+  padding: 4px 8px;
+  margin-right: 4px;
 
   font-size: 16px;
   font-weight: 500;
@@ -1972,11 +1974,32 @@ label {
   text-decoration: none;
 }
 
-.bnt-page-next::before {
+.bnt-page-back::before {
   content: "";
 
   position: absolute;
   top: 8px;
+  right: 160px;
+
+  transform: rotate(180deg);
+  opacity: 0.5;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.bnt-page-next::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: -23px;
+
 
   width: 8px;
   height: 12px;
