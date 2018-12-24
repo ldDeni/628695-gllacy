@@ -146,7 +146,72 @@
       </section>
     </div>
     <h1 class="title">Сливочное мороженое</h1>
+    <div class="form">
+      <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 
+        <fieldset>
+        <legend>Сортировка:</legend>
+        <select class="form-select" name="Сортировка" id="select">
+          <option value="По популярности">По популярности</option>
+          <option value="По цене">По цене</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Цена: 100руб. - 500 руб.</legend>
+        <input id="range" type="range">
+      </fieldset>
+
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul class="filter fieldset-radio">
+            <li>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="percentage-0" name="radio-grup">
+              <label for="percentage-0">0%</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-radio visually-hidden" type="radio" id="percentage-10" name="radio-grup" checked>
+              <label for="percentage-10">до 10%</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-radio visually-hidden" type="radio" id="percentage-30" name="radio-grup">
+              <label for="percentage-30">до 30%</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-radio visually-hidden" type="radio" id="percentage-40" name="radio-grup">
+              <label for="percentage-40">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset id="fieldset-checkbox">
+          <legend>Наполнители:</legend>
+          <ul class="filter filter-checkbox">
+            <li>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="fruit">
+              <label for="fruit">фрукты</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="syrups">
+              <label for="syrups">сиропы</label>
+            </li>
+            <li>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="jams">
+              <label for="jams">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="bnt-filter" type="button" name="Применить" value="Применить">Применить</button>
+      </form>
+    </div>
     <!-- Сдесь будет фильтр -->
 
     <section class="catalog">
