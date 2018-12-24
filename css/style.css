@@ -939,22 +939,37 @@ input[type="radio"].visually-hidden {
 }
 
 .social-footer .footer-navigation {
-  padding-top: 14px;
-  padding-left: 41px;
+  width: 315px;
+  height: 45px;
+  margin-top: 12px;
+  margin-left: 83px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.navigation-left {
-  padding-left: 30px;
-}
-
-.navigation-right {
-  padding-left: 30px;
-}
-
-.footer-navigation a {
+.element-one,
+.element-two {
+  padding: 0;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.element-three,
+.element-four {
+  padding-left: 22px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.element-one,
+.element-three {
+  line-height: 18px;
+  padding-top: 5px;
 }
 
 .main-footer a:hover,
