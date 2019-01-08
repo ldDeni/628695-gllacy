@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -20,20 +20,20 @@
           <img src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
         </a>
         <ul class="site-navigation">
-          <li class="catolog-menu">
-            <a class="button" href="catalog.html">Каталог</a>
+          <li class="catalog-menu-item catolog-menu">
+            <a class="button" href="#">Каталог</a>
             <ul class="sub-menu">
-              <li class="new"><a href="#">Новинки</a></li>
+              <li class="new"><a class="new-item" href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="# ">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <a class="button" href="shipping.html">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="catalog-menu-item">
             <a class="button" href="info.html">О Компании</a>
           </li>
         </ul>
@@ -51,23 +51,22 @@
             <section class="searching-content">
 
               <form class="searching-form" action="echo.htmlacademy.ru" method="POST">
-
                 <input class="modal-searching" type="text" name="Поиск" id="user-searching" placeholder="Что ищем?">
-
               </form>
 
             </section>
           </li>
 
           <li class="login-link">
-            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="21" height="19" viewBox="0 0 21 19">
+            <a class="button-login-link" href="login.html">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
+                viewBox="0 0 21 19">
                 <g fill="#fff">
                   <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
                   <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
                 </g>
-              </svg>
-              Вход</a>
+              </svg> Вход
+            </a>
 
             <section class="modal-login">
               <h2 class="visually-hidden">Вход в личный кабинет</h2>
@@ -83,8 +82,8 @@
                 <div class="container-modal">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
-                </div>>
-              </form>
+                </div>
+              </form> 
             </section>
           </li>
 
@@ -143,7 +142,7 @@
       <section class="section-action">
         <h2 class="visually-hidden">Акций</h2>
         <div class="conteainer-action action-raspberry">
-          <h3>Малинка даром!</h3>
+          <h3 class="title-action">Малинка даром!</h3>
           <p class="action-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
             варенья бесплатно.</p>
           <p class="wrapper-bnt-action">
@@ -151,10 +150,9 @@
           </p>
         </div>
         <div class="conteainer-action action-chocolate">
-          <h3>Шоколадки даром!</h3>
+          <h3 class="title-action">Шоколадки даром!</h3>
           <p class="action-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
-            совершенно
-            бесплатно.</p>
+            совершенно бесплатно.</p>
           <p class="wrapper-bnt-action">
             <a class="bnt-action" href="#">Хочу шоколадки!</a>
           </p>
@@ -220,19 +218,14 @@
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <div class="inner">
           <p class="advantage advantage-icon1">Все наше мороженое изготавливается на собственном производстве, с
-            использованием
-            современного оборудования и проверенных временем технологий.</p>
+            использованием современного оборудования и проверенных временем технологий.</p>
           <p class="advantage advantage-icon2">Закупка ингредиентов производится только у проверенных фермерских
-            хозяйств
-            и
-            компаний, с
-            которыми нас связывает долговременное сотрудничество.</p>
+            хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
           <p class="advantage advantage-icon3">Для приготовления мороженого используются настоящие сливки и молоко
-            высочайшего качества.
-            Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+            высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически
+            чистого сырья. </p>
           <p class="advantage advantage-icon4">Доставка нашего мороженого до заказчиков осуществляется в специальном
-            термопаке, который
-            не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </p>
         </div>
       </section>
@@ -240,17 +233,15 @@
       <div class="wrap">
         <article class="article">
           <p class="title-article">Новое в нашем блоге</p>
-          <p class="link-article"><a href="#">10 способов сервировки<br>фруктовых щербетов к<br>столу</a></p>
+          <p class="link-article"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
         </article>
 
         <div class="grad">
           <section class="newsletter">
-            <form action="echo.htmlacademy.ru">
+            <form action="echo.htmlacademy.ru" method="GET">
 
-              <p class="news-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-                что у нас
-                происходит.
-                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+              <p class="news-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного
+                что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
               <label class="visually-hidden" for="mailing">Электронная почта</label>
               <input type="email" placeholder="Электронная почта" id="mailing">
 
@@ -264,9 +255,8 @@
     <div class="maps">
       <div class="wrap-maps container">
         <section class="section-contacts">
-          <h3>Адрес главного офиса<br>
-            и офлайн-магазина:</h3>
-          <p class="address-phone">ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
+          <h3 class="header-address">Адрес главного офиса и офлайн-магазина:</h3>
+          <p class="address-phone">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p class="for-orders">Для заказов по телефону:</p>
           <p class="address-phone">8 812 450-25-25</p>
           <p class="hours">(с 10 до 20 ежедневно)</p>
@@ -287,10 +277,10 @@
 
         <div class="footer-navigation">
 
-          <a class="icon-heart element-one" href="#">Для поставщиков</a>
-          <a class="element-two" href="#">О производстве</a>
-          <a class="element-three" href="#">Наши документы</a>
-          <a class="element-four" href="#">Экологические стандарты</a>
+          <a class="icon-heart element element-one" href="#">Для поставщиков</a>
+          <a class="element element-two" href="#">О производстве</a>
+          <a class="element element-three" href="#">Наши документы</a>
+          <a class="element element-four" href="#">Экологические стандарты</a>
 
         </div>
 
@@ -317,11 +307,11 @@
       <textarea class="input-field" id="enter-text" placeholder="Напишите что-нибудь.."></textarea>
 
       <button class="button-close" type="button">Закрыть</button>
-      <button class="button-send" type="submit">Отправить</button>
+      <button class="button-send-feedback" type="submit">Отправить</button>
     </form>
   </section>
   <div class="overlay"></div>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>
