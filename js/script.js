@@ -41,6 +41,8 @@ window.addEventListener("keydown", function (evt) {
 windowFeedback.addEventListener("submit", function (evt) {
   if (!name.value || mail.value || feiled.value) {
     evt.preventDefault();
+    windowFeedback.classList.remove("feedback-error");
+    windowFeedback.offsetWidth = windowFeedback.offsetWidth;
     windowFeedback.classList.add("feedback-error");
   }
 });
