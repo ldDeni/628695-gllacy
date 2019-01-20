@@ -73,6 +73,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
 
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -156,7 +158,7 @@ input[type="radio"].visually-hidden {
   padding-right: 17px;
   padding-top: 8px;
   padding-bottom: 9px;
-  margin-left: 8px;
+  margin-left: 9px;
 
   text-decoration: none;
   border-radius: 50px;
@@ -259,7 +261,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 37px;
   right: 0px;
-  padding: 20px 15px;
+
+  padding-top: 20px;
+  padding-bottom: 19px;
+  padding-right: 16px;
+  padding-left: 16px;
+
   z-index: 1;
 
   background-color: #f8f7f4;
@@ -269,9 +276,9 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-searching {
-  width: 308px;
+  width: 309px;
   min-height: 45px;
-  padding-left: 10px;
+  padding-left: 13px;
 
   font-size: 14px;
   font-weight: 400;
@@ -291,11 +298,11 @@ input[type="radio"].visually-hidden {
 .modal-login {
   display: none;
   position: absolute;
-  top: 40px;
-  right: -5px;
-  padding-left: 16px;
+  top: 37px;
+  right: -3px;
+  padding-left: 20px;
   padding-top: 20px;
-  padding-right: 22px;
+  padding-right: 17px;
   padding-bottom: 20px;
   z-index: 1;
 
@@ -307,6 +314,7 @@ input[type="radio"].visually-hidden {
 
 .modal-login a {
   padding: 0;
+  margin-top: -3px;
 
   font-size: 13px;
   font-weight: 400;
@@ -335,10 +343,15 @@ input[type="radio"].visually-hidden {
 }
 
 .button-entrance {
-  width: 105px;
+  width: 102px;
   margin-top: 20px;
-  padding: 10px;
-  border-radius: 90px;
+  margin-left: -5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border-radius: 22px;
   border: none;
 
   font-size: 18px;
@@ -361,9 +374,9 @@ input[type="radio"].visually-hidden {
 
 .login-mail,
 .login-password {
-  width: 225px;
+  width: 241px;
   height: 40px;
-  padding-left: 15px;
+  padding-left: 12px;
 
   font-size: 14px;
   font-weight: 400;
@@ -378,7 +391,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container-modal {
-  margin-top: 17px;
+  margin-top: 23px;
   margin-left: 5px;
 }
 
@@ -419,8 +432,8 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 38px;
+  right: -1px;
   padding: 20px 15px;
 
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -639,8 +652,8 @@ input[type="radio"].visually-hidden {
 
 .sub-menu {
   position: absolute;
-  top: 38px;
-  left: 1px;
+  top: 40px;
+  left: 2px;
   display: none;
   margin: 0;
   padding: 0;
@@ -688,8 +701,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 41px;
-  left: 11px;
+  top: 38px;
+  left: 7px;
   height: 1px;
   width: 128px;
   background-color: #d1d0ce;
@@ -798,7 +811,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 }
 
 .advantage {
@@ -815,8 +828,8 @@ input[type="radio"].visually-hidden {
   height: 50px;
 
   position: absolute;
-  top: -12px;
-  left: -31px;
+  top: -13px;
+  left: -29px;
 
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
@@ -830,7 +843,7 @@ input[type="radio"].visually-hidden {
   height: 50px;
 
   position: absolute;
-  top: -12px;
+  top: -15px;
   left: -27px;
 
   background-image: url("../img/thermometer.svg");
@@ -845,8 +858,8 @@ input[type="radio"].visually-hidden {
   height: 50px;
 
   position: absolute;
-  top: -12px;
-  left: -30px;
+  top: -15px;
+  left: -29px;
 
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
@@ -940,7 +953,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-top: 30px;
   padding-left: 21px;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
 
   font-size: 16px;
   font-weight: 400;
@@ -972,7 +985,7 @@ input[type="radio"].visually-hidden {
 
   padding-left: 15px;
   padding-top: 8px;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   margin-right: 9px;
 }
 
@@ -1145,7 +1158,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 18px;
+  padding-top: 19px;
 }
 
 .social-footer ul {
@@ -1172,7 +1185,7 @@ input[type="radio"].visually-hidden {
 .social-footer .footer-navigation {
   width: 315px;
   height: 45px;
-  margin-top: 12px;
+  margin-top: 11px;
   margin-left: 83px;
 
   display: -webkit-box;
@@ -1302,7 +1315,7 @@ input[type="radio"].visually-hidden {
 
 .crumbs li {
   position: relative;
-  padding-right: 20px;
+  padding-right: 21px;
 }
 
 .element-crumbs::before {
@@ -1336,17 +1349,18 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
+  line-height: 16px;
 }
 
-.crumbs a:hover,
-.crumbs a:focus {
+.crumbs .element-crumbs:hover,
+.crumbs .element-crumbs:focus {
   color: #ffbc9e;
 }
 
 .title {
   margin: 0;
-  margin-bottom: 23px;
-  padding-top: 1px;
+  margin-bottom: 22px;
+  padding-top: 2px;
 
   font-size: 35px;
   font-weight: 700;
@@ -1371,7 +1385,7 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   position: relative;
   width: 267px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .catalog a {
@@ -1419,7 +1433,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   padding-left: 24px;
   padding-right: 25px;
-  padding-bottom: 27px;
+  padding-bottom: 29px;
 
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -1430,8 +1444,8 @@ input[type="radio"].visually-hidden {
   width: 428px;
   max-height: 413px;
 
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 3px;
   bottom: 0;
   right: 0;
   margin: auto;
@@ -1622,7 +1636,7 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-left: 15px;
   padding-bottom: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   resize: none;
 
   border-radius: 5px;
@@ -1647,8 +1661,8 @@ input[type="radio"].visually-hidden {
   height: 18px;
 
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 14px;
+  right: 16px;
 
   background-image: url("..//img/cross-big.svg");
   background-repeat: no-repeat;
@@ -1661,7 +1675,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button-send-feedback {
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 12px;
   padding-left: 23px;
   padding-right: 23px;
@@ -1741,14 +1755,18 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
 }
 
-.bnt-view {
+.catalog-item .bnt-view {
   display: none;
   position: absolute;
-  bottom: -60px;
-  left: 40px;
+  bottom: -53px;
+  left: 34px;
+
   z-index: 2;
 
-  padding: 13px 17px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
 
   text-decoration: none;
   font-size: 18px;
@@ -1892,7 +1910,7 @@ input[type="radio"].visually-hidden {
 }
 
 .action-text {
-  padding-bottom: 57px;
+  padding-bottom: 55px;
   padding-right: 18px;
   margin: 0px;
 
@@ -1916,7 +1934,10 @@ input[type="radio"].visually-hidden {
 }
 
 .bnt-action {
-  padding: 12px 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   color: #ffffff;
   font-size: 18px;
@@ -1986,12 +2007,12 @@ input[type="radio"].visually-hidden {
 
 .section-contacts {
   position: absolute;
-  right: 25px;
-  top: 62px;
-  width: 278px;
+  right: 26px;
+  top: 63px;
+  width: 277px;
   padding-left: 25px;
-  padding-top: 28px;
-  padding-bottom: 40px;
+  padding-top: 27px;
+  padding-bottom: 41px;
 
   color: #323232;
 
@@ -2005,6 +2026,7 @@ input[type="radio"].visually-hidden {
 
 .section-contacts h3 {
   margin: 0;
+  padding-top: 2px;
 
   font-size: 14px;
   font-weight: 400;
@@ -2017,7 +2039,7 @@ input[type="radio"].visually-hidden {
 
 .for-orders {
   padding-top: 20px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 }
 
 .header-address {
@@ -2037,7 +2059,7 @@ input[type="radio"].visually-hidden {
 }
 
 .adress {
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 .hours {
@@ -2048,11 +2070,11 @@ input[type="radio"].visually-hidden {
 
 .wrapper-bnt-contacts {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 34px;
 }
 
 .bnt-contacts {
-  padding-top: 12px;
+  padding-top: 11px;
   padding-bottom: 12px;
   padding-left: 28px;
   padding-right: 28px;
@@ -2099,8 +2121,9 @@ input[type="radio"].visually-hidden {
 .wrap-maps::before {
   content: "";
   position: absolute;
-  left: 264px;
-  bottom: -281px;
+
+  left: 265px;
+  bottom: -282px;
 
   z-index: 2;
 
@@ -2231,6 +2254,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .slider-controls {
   position: absolute;
   bottom: 61px;
@@ -2292,8 +2319,8 @@ input[type="radio"].visually-hidden {
   border: none;
   padding: 0;
   margin: 0;
-  margin-right: 14px;
-  margin-top: 5px;
+  margin-right: 15px;
+  margin-top: 4px;
   margin-bottom: 6px;
 }
 
@@ -2329,6 +2356,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nested-list {
+  padding-top: 2px;
   color: #323232;
   font-size: 14px;
   font-weight: 400;
@@ -2381,7 +2409,7 @@ input[type="radio"].visually-hidden {
 
   padding-top: 8px;
   padding-bottom: 7px;
-  padding-left: 48px;
+  padding-left: 46px;
   padding-right: 17px;
   margin-bottom: 8px;
 
@@ -2414,8 +2442,8 @@ input[type="radio"].visually-hidden {
   top: -2px;
   left: -31px;
 
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
 
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -2427,7 +2455,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 5px;
-  left: -25px;
+  left: -24px;
 
   width: 8px;
   height: 8px;
@@ -2590,7 +2618,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls {
-  padding-left: 15px;
+  padding-left: 14px;
 }
 
 .price-controls label {
@@ -2629,7 +2657,7 @@ input[type="radio"].visually-hidden {
   width: 7px;
   height: 2px;
 
-  top: 12px;
+  top: 10px;
   left: 322px;
 
   background-color: #ffffff;
@@ -2645,7 +2673,7 @@ input[type="radio"].visually-hidden {
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 
   background-color: #aabbb1;
   border-radius: 15px;
@@ -2667,7 +2695,7 @@ input[type="radio"].visually-hidden {
 
 .toggle {
   position: absolute;
-  top: 7px;
+  top: 8px;
 
   width: 4px;
   height: 4px;
@@ -2687,7 +2715,7 @@ input[type="radio"].visually-hidden {
 }
 
 .toggle-min {
-  left: 35px;
+  left: 34px;
 }
 
 .toggle-max {
@@ -2700,6 +2728,7 @@ input[type="radio"].visually-hidden {
 
   margin-right: 22px;
   margin-bottom: 29px;
+  padding-top: 1px;
 
   position: relative;
 
@@ -2746,7 +2775,10 @@ input[type="radio"].visually-hidden {
 }
 
 .bnt-page-selector {
-  padding: 5px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   font-size: 16px;
   font-weight: 500;
@@ -2754,9 +2786,16 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-.bnt-page-selector:hover {
+.bnt-page-selector:hover,
+.bnt-page-selector:focus {
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bnt-page-selector:active {
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .bnt-page-back::before {
